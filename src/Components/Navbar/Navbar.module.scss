@@ -1,0 +1,50 @@
+nav{
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+   z-index: 99;
+   bottom: 0;
+   top: 0;
+    // display: none;
+    img{
+        width: 100%;
+    }
+    .btn{
+        &:hover{
+            box-shadow: none;
+            transform: scale(1.06);
+            }
+       width: 100%;
+       padding: 10px;
+       border: none;
+       color: white;
+       border-radius: 10px;
+       text-align: left;
+       font-size: 20px;
+       margin-top: 20px;
+       text-transform: capitalize;
+       font-weight: bolder;
+       cursor: pointer;
+       i{
+        padding-right: 7px;
+       }
+      
+    }
+    .btn1{
+        box-shadow: 5px 5px 5px  lightgray;
+    }
+    .btn2{
+        color: black;
+        border: 2px solid lightgray;
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width:778px) {
+    nav{
+       background-color: transparent;
+        
+    }
+}
+
