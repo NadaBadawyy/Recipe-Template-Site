@@ -50,7 +50,7 @@ export default function Recipe() {
             <div className={`${style.des}`}>
               <p>{r.strInstructions}</p>
             </div>
-            <div className={`${style.content}  `}>
+            <div className={`${style.content}  justify-center`}>
               <div className={style.c }>
               <div className={`${style.line} mb-10 `}>
                 <h4 className="mb-15">ingredients</h4>
