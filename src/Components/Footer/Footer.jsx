@@ -16,7 +16,7 @@ export default function Footer() {
           <h5>Route</h5>
         </div>
         <div className={`${style.lightline}`}></div>
-        <p>© 2025 Nagy Osama™. All Rights Reserved.</p>
+        <p>Made by Nada Badawy</p>
       </footer>
     </>
   );
