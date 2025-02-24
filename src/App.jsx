@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.scss'
 import Navbar from './Components/Navbar/Navbar'
 import Categories from './Components/Categories/Categories'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import MealsContextProvider, { MealsContext } from './Context/MealsContext'
 import AllMeals from './Components/AllMeals/AllMeals'
@@ -14,7 +14,7 @@ import NavContextProvider from './Context/NavContext'
 
 function App() {
   
-    let routes=createBrowserRouter([
+    let routes=createHashRouter([
       {path:"", element:<Layout/> , children:[
         {index:true ,element:<AllMeals/>},
         {path:"category/:cat",element:<SpecificMeals/>},
